@@ -1,0 +1,169 @@
+<!DOCTYPE html> <html lang="en">
+     <head>    
+ <meta charset="UTF-8">    
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <link rel="shortcurt icon" href="img/EST.png">   
+       <link rel="stylesheet" href="css/heloise.css">  
+          <title>Filmes</title> 
+          <style>
+          * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1.title {
+    background-color: blue;
+    color: beige;
+    padding: 20px;
+}
+
+form {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+}
+
+form input#pesquisa {
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+form button {
+    padding: 10px;
+    background-color: darkgray;
+    color: aliceblue; 
+    border: none; /* Adicionado para remover borda */
+    border-radius: 10px;
+    cursor: pointer; /* Adiciona cursor pointer para o botão */
+}
+
+div.lista {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para quebrar a linha se necessário */
+    gap: 10px; /* Espaço entre os itens */
+}
+
+div.item {
+    text-align: center;
+    padding: 10px; /* Corrigido de 10xp para 10px */
+    width: 400px;
+    border: 2px solid rgb(238, 238, 236);
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s; /* Adiciona transição suave */
+}
+
+div.item:hover {
+    background-color: rgb(69, 70, 71);
+    cursor: pointer;
+}
+
+div.item img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+          </style>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho com logo e navegação -->
+        <div class="logo">
+            <img src="img/ESTAR -.png" alt="Estar -">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="pginicial.html">Home</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="espn.html">ESPN</a></li>
+                <li><a href="#">Meu Perfil</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    </header>
+
+    <div class="hero">
+        <h1>Séries</h1>
+        <div class="filters">
+            <button type="button">Destaque</button>
+            <button type="button">Lançamentos</button>
+            <button type="button">Todas as Séries</button>
+            <button type="button">Ficção Científica</button>
+            <button type="button">Comédia</button>
+            <button type="button">Ação</button>
+            <button type="button">Aventura</button>
+            <button type="button">Policial</button>
+            <button type="button">Drama</button>
+            <button type="button">Fantasia</button>
+        </div>
+        <form>
+            <input id="pesquisa" type="text" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+            
+        
+        <div class="lista">
+            <div class="item">
+                <img src="img/Impuros.jpg" alt="Impuros">
+                <h2>Impuros</h2>
+            </div>
+            <div class="item">
+                <img src="img/Olhos atentos.jpg" alt="Olhos Atentos">
+                <h2>Olhos Atentos</h2>
+            </div>
+            <div class="item">
+                <img src="img/The-Walking-Dead.jpg" alt="The Walking Dead">
+                <h2>The Walking Dead</h2>
+            </div>
+            <div class="item">
+                <img src="img/modern family.jpg" alt="Modern Family">
+                <h2>Modern Family</h2>
+            </div>
+            <div class="item">
+                <img src="img/revenge.png" alt="Revenge">
+                <h2>Revenge</h2>
+            </div>
+            <div class="item">
+                <img src="img/screamqueens.jpg" alt="Scream Queens">
+                <h2>Scream Queens</h2>
+            </div>
+            <div class="item">
+                <img src="img/american horror story.jpg" alt="American Horror Story">
+                <h2>American Horror Story</h2>
+            </div>
+            <div class="item">
+                <img src="img/greys anatomy.jpg" alt="Greys Anatomy">
+                <h2>Greys Anatomy</h2> 
+            </div>
+            <div class="item">
+                <img src="img/Dopesick-StarPlus-1.jpg" alt="Dopesick">
+                <h2>Dopesick</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre</h2>
+                <p>Este é um site inspirado na Star+, para fins de Pirataria, desenvolvido por Heloise Souza Lemos</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Email: contato@estarmenosémais.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Estar menos é + . Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
